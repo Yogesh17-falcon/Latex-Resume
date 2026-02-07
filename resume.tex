@@ -1,0 +1,104 @@
+\documentclass[11pt]{article}        % set main text size
+\usepackage[letterpaper,                % set paper size to letterpaper
+top=0.5in,                          % specify top page margin
+bottom=0.5in,                       % specify bottom page margin
+left=0.5in,                         % specify left page margin
+right=0.5in]{geometry}              % specify right page margin
+                       
+\usepackage{XCharter}               % set font
+\usepackage[T1]{fontenc}            % output encoding
+\usepackage[utf8]{inputenc}         % input encoding
+\usepackage{enumitem}               % enable lists for bullet points
+\usepackage[hidelinks]{hyperref}    % format hyperlinks
+\usepackage{titlesec}               % enable section title customization
+\raggedright                        % disable text justification
+\pagestyle{empty}                   % disable page numbering
+
+% ensure PDF output will be all-Unicode and machine-readable
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+% format section headings
+\titleformat{\section}{\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule\vspace{-6.5pt}]
+
+% format bullet points
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$}
+\setlist[itemize]{itemsep=-2pt, leftmargin=12pt}
+
+\begin{document}
+
+% name
+\centerline{\Huge YOGESH PATIL}
+
+\vspace{5pt}
+
+% contact information
+\centerline{+91 9579563457 | \href{mailto:yogeshpatil18999@gmail.com}{yogeshpatil18999@gmail.com} | Pune, IND | \href{https://www.linkedin.com}{LinkedIn}}
+
+\vspace{-10pt}
+
+% skills section
+\section*{Technical Skills}
+\textbf{Languages \& Tools:} SQL, Python, MS Excel, Power BI, Tableau, Hue, Hive, Impala, Oracle SQL Dev, PostgreSQL \\
+\textbf{Libraries/Frameworks:} Scikit-learn, TensorFlow, Keras, Pandas, NumPy, Matplotlib, Seaborn \\
+\textbf{Concepts:} Supervised/Unsupervised Learning, Regression (Linear/Logistic), Tree-Based Models (Random Forest, XGBoost), Time Series Analysis, A/B Testing, Feature Engineering, Fraud Detection, KPI Design
+\vspace{-6.5pt}
+
+% experience section
+\section*{Work Experience}
+
+\textbf{Data Scientist,} Cotiviti -- Pune, IND \hfill Feb 2024 -- Present \\
+\vspace{-9pt}
+\begin{itemize}
+  \item Serve as the primary analytics liaison for two large U.S. insurance clients, leading end-to-end solutions, reconciliation, and financial analysis to support strategic decision-making.
+  \item Analyze large-scale automated financial and claims datasets using SQL (Hive, Impala) and Python to identify trends and anomalies for monthly invoicing and weekly operations.
+  \item Apply statistical analysis, segmentation, and comparative analytics to diagnose performance issues and uncover savings opportunities for internal stakeholders.
+  \item Built an end-to-end Python data pipeline integrating SQL and Excel, applying classification models and feature engineering to automate reconciliation, saving \textasciitilde\$2M (2024) annually.
+  \item Developed an anomaly detection framework using time series analysis and unsupervised learning across rolling 4-week and 13-week windows to trigger proactive automated alerts.
+  \item Identified high-value claims with incomplete data and implemented Power BI dashboards with a monthly tracking process, reducing outstanding claims and improving financial recovery.
+\end{itemize}
+
+\textbf{Associate Analyst,} Altimetrik -- Pune, IND \hfill Sep 2021 -- Sep 2022 \\
+\vspace{-9pt}
+\begin{itemize}
+  \item Led the initiative to enhance Key Performance Indicators (KPIs) within the TARA project, a pivotal extension of the ReportPortal platform.
+  \item Applied unsupervised learning (K-Means clustering) to group tasks and workflows based on performance metrics, uncovering inefficiencies and tailoring operational strategies.
+\end{itemize}
+
+\vspace{-10pt}
+
+% projects section
+\section*{Self Projects}
+
+\textbf{Graph-Based Anime Recommendation System} \hfill Flask, Python \\
+\vspace{-9pt}
+\begin{itemize}
+  \item Developed a recommendation engine using feature engineering, cosine similarity, and K-Means clustering.
+  \item Leveraged real-time MyAnimeList data to deliver explainable, graph-based recommendations and statistical insights.
+\end{itemize}
+
+\textbf{Preference App} \hfill AI, Python \\
+\vspace{-9pt}
+\begin{itemize}
+  \item Created a full-stack AI application that analyzes user decision patterns to infer personality profiles.
+  \item Implemented GPT-based reasoning and structured data pipelines to deliver diverse, personalized recommendations.
+\end{itemize}
+
+\vspace{-10pt}
+
+% education section
+\section*{Education}
+\textbf{Dr. D. Y. Patil Institute of Technology} -- B.E. in Computer Science \& Engineering \hfill 2017 -- 2021 \\
+\textit{Result: 8.5 CGPA}
+
+\vspace{-10pt}
+
+% awards and certificates
+\section*{Awards \& Certificates}
+\begin{itemize}
+    \item \textbf{High Five Award (Cotiviti):} Annual Award; recipient of 1 Monthly \& Quarterly Award.
+    \item \textbf{Data Analytics:} Certified by SkilloVilla.
+    \item \textbf{Python for Data Analysis:} LinkedIn Learning \& CognitiveClass.AI (Visualization, Analysis).
+\end{itemize}
+
+\end{document}
