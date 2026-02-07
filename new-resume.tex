@@ -1,0 +1,181 @@
+%-------------------------
+% Resume in Latex
+% Author : Yogesh Patil
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Yogesh Patil} \\ \vspace{1pt}
+    \small +91 9579563457 $|$ \href{mailto:yogeshpatil18999@gmail.com}{\underline{yogeshpatil18999@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/yogesh-patil-analyst/}{\underline{linkedin.com/in/yogesh-patil-analyst}} $|$
+    Pune, IND
+\end{center}
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages \& Tools}{: SQL, Python, MS Excel, Power BI, Tableau, Hue, Hive, Impala, Oracle SQL Dev, PostgreSQL} \\
+     \textbf{Libraries \& Frameworks}{: Scikit-learn, TensorFlow, Keras, Pandas, NumPy, Matplotlib, Seaborn} \\
+     \textbf{Concepts}{: Supervised/Unsupervised Learning, Regression, Tree-Based Models, Time Series, A/B Testing, Feature Engineering} \\
+     \textbf{Other}{: Healthcare, Project Management, Communication, Problem Solving, Decision Making}
+    }}
+ \end{itemize}
+
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Data Scientist}{Feb. 2024 -- Present}
+      {Cotiviti}{Pune, IND}
+      \resumeItemListStart
+        \resumeItem{Served as primary analytics liaison for two large U.S. insurance clients, leading end-to-end solutions and financial analysis to support strategic decision-making and profitability initiatives.}
+        \resumeItem{Analyzed large-scale automated financial and claims datasets using SQL and Python to identify performance drivers supporting monthly invoicing and weekly operations.}
+        \resumeItem{Applied statistical analysis, trend analysis, and segmentation to diagnose performance issues and inform data-driven recommendations for stakeholders.}
+        \resumeItem{Built an end-to-end Python data pipeline integrating SQL and Excel to automate reconciliation workflows, resulting in \textasciitilde\$2M (2024) in annualized savings.}
+        \resumeItem{Developed an anomaly detection framework leveraging time series analysis and unsupervised learning across rolling 4-week and 13-week historical windows to trigger automated alerts.}
+        \resumeItem{Identified high-value claims with missing data and built Power BI dashboards to improve financial recovery through a monthly tracking process.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Associate Analyst}{Sep. 2021 -- Sep. 2022}
+      {Altimetrik}{Pune, IND}
+      \resumeItemListStart
+        \resumeItem{Led the initiative to enhance Key Performance Indicators (KPIs) within the TARA project, an extension of the ReportPortal platform.}
+        \resumeItem{Applied unsupervised learning (K-Means clustering) to group workflows based on behavior and performance metrics to uncover inefficiencies.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Self Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Graph-Based Anime Recommendation System} $|$ \href{https://anime-recommender-wx0q.onrender.com/}{\underline{Live Link}}} {}
+          \resumeItemListStart
+            \resumeItem{Developed a recommendation system using feature engineering and K-Means clustering to deliver explainable recommendations using real-time MyAnimeList data.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Preference App} $|$ \href{https://guessing-game--yogeshpatil43.replit.app/}{\underline{Live Link}}} {}
+          \resumeItemListStart
+            \resumeItem{Created a full-stack application that analyzes user decision patterns to infer personality profiles using GPT-based reasoning.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Dr. D. Y. Patil Institute of Technology}{Pune, IND}
+      {Bachelor of Engineering in Computer Science \& Engineering (8.5 CGPA)}{2017 -- 2021}
+  \resumeSubHeadingListEnd
+
+
+%-----------AWARDS-----------
+\section{Awards \& Recognition}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{High Five Award (Cotiviti)}{: Annual Award; Recipient of 1 Monthly \& Quarterly Award for excellence in Data Science. $|$ \href{https://drive.google.com/file/d/1X9S02VJoPfQ28ysWWrs-yD8R_JfB65dZ/view}{\underline{View Award}}}
+    }}
+ \end{itemize}
+
+
+%-----------CERTIFICATES-----------
+\section{Certificates}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Data Analytics}{: Certified by SkilloVilla} \\
+     \textbf{Python for Data Analysis}{: Certified by LinkedIn} \\
+     \textbf{Python 101, Visualization, Analysis}{: Certified by CognitiveClass.AI}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
